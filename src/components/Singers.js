@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const User = ({nom, age}) => {
+class User extends Component {
+    render () {
+        const {nom, age} = this.props
 
-    return (
-        <div>
-            <p>Chanteur: {nom} {age}</p>
-        </div>
-    )
+        return (
+            <div>
+                <p>Chanteur: {nom} {age} ans</p>
+
+            </div>
+        )
+    }
+
 }
 export default User
